@@ -1,10 +1,11 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuGraduationCap, LuBrainCircuit, LuEdit } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
+import zeldaImg from "@/public/zelda.png"
+import kryptImg from "@/public/krypt.png"
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import authenImg from "@/public/authenticator.png"
 
 export const links = [
   {
@@ -35,52 +36,52 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Intro to AI Teacher Assistant",
+    location: "Columbus, OH",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Worked for a lecturer to return course work and also helped students understand course material in office hours.",
+    icon: React.createElement(LuEdit),
+    date: "Fall 2022",
+  },
+  {
+    title: "Buckeye AutoDrive Team",
+    location: "Columbus, OH",
+    description:
+      "Worked on a sub-team with 10 other students with the goal to develop and demonstrate a Standard Level 4 autonomous vehicle.",
+    icon: React.createElement(LuBrainCircuit),
+    date: "Fall 2022",
+  },
+  {
+    title: "Graduated College",
+    location: "Columbus, OH",
+    description:
+      "I have now graduated from The Ohio State Engineering and am looking for my first full time position.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "August 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "The Legend of Zelda Remake",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Worked with 5 other students to recreate a retro game with some additional features.",
+    tags: ["C#", "Level Generation", "Loot Drops", "Weapon Swapping", "Additional Weapons"],
+    imageUrl: zeldaImg,
   },
   {
-    title: "rmtDev",
+    title: "Krypt",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Krypt is a Web 3.0 app that is connected to the blockchain, has Metamask pairing, and has interaction with smart contracts.",
+    tags: ["React", "Blockchain", "Solidity", "Web 3.0", "Metamask"],
+    imageUrl: kryptImg,
   },
   {
-    title: "Word Analytics",
+    title: "Authenticator",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A full-stack authentication app developed with the MERN Stack.",
+    tags: ["React", "Node.js", "Express.js", "MongoDB"],
+    imageUrl: authenImg,
   },
 ] as const;
 
@@ -94,14 +95,15 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
+  "Express.js",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
+  "C#",
+  "C",
+  "C++",
+  "Pytorch",
+  "Sklearn",
+  "Solidity",
   "Framer Motion",
+  "Blockchain",
 ] as const;
